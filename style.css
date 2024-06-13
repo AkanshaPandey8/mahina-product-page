@@ -1,0 +1,130 @@
+::-webkit-scrollbar {
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bundle {
+    display: flex;
+    flex-direction: column;
+}
+
+.bundle_size {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    min-width: 380px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: rgb(209, 202, 202);
+    border-radius: 10px;
+}
+
+.bundle_size_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.percent {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+}
+
+.items {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Archivo", sans-serif;
+}
+
+.product_container {
+    width: 70%;
+    min-width: 380px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+
+    flex-direction: column;
+    padding: 10px;
+
+
+}
+
+.image {
+
+    width: 80px;
+    height: 80px;
+
+}
+
+.product-name {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Archivo", sans-serif;
+}
+
+.Cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(246, 214, 190);
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cost {
+
+
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif
+}
+
+.add_to_cart {
+
+    padding: 10px 5%;
+    background-color: rgb(91, 69, 65);
+    opacity: 0.5;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: hidden;
+
+
+}
