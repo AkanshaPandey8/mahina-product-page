@@ -12,22 +12,26 @@ document.querySelectorAll('.bundle_size_option').forEach(option => {
         document.querySelectorAll('.bundle_size_option').forEach(opt => {
             opt.style.backgroundColor = 'white';
             opt.style.color = 'black';
+            opt.classList.remove('active');
         });
         const productContainer = document.getElementById('product_container');
         productContainer.innerHTML = '';
         this.style.backgroundColor = 'rgb(228, 94, 16)';
         this.style.color = 'white';
+        this.classList.add('active');
         const imageUrl = 'images/mahina.jpg';
 
         for (let i = 0; i < size; i++) {
             const productDiv = document.createElement('div');
             productDiv.className = 'product';
+            productDiv.setAttribute('data_idx', i);
             const productDivInside_2 = document.createElement('div');
             productDivInside_2.className = 'product-name'
             const imgElement = document.createElement('img');
             imgElement.className = 'image';
             imgElement.src = imageUrl;
             imgElement.alt = 'Product Image';
+            
             productDiv.appendChild(imgElement);
 
 
