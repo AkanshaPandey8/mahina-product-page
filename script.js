@@ -22,7 +22,13 @@ document.querySelectorAll('.bundle_size_option').forEach(option => {
         const imageUrl = 'images/mahina.jpg';
 
         for (let i = 0; i < size; i++) {
+            const container=document.createElement('div');
             const productDiv = document.createElement('div');
+            container.className='container';
+            
+            const line=document.createElement('div');
+            line.setAttribute('data_idx',i);
+            line.className='line';
             productDiv.className = 'product';
             productDiv.setAttribute('data_idx', i);
             const productDivInside_2 = document.createElement('div');
@@ -38,7 +44,10 @@ document.querySelectorAll('.bundle_size_option').forEach(option => {
             productDivInside_2.textContent = 'Product';
 
             productDiv.appendChild(productDivInside_2);
-            productContainer.appendChild(productDiv);
+            container.appendChild(productDiv);
+            container.appendChild(line);
+            productContainer.appendChild(container);
+            
         }
     });
 });
